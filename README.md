@@ -38,13 +38,16 @@ Trackly is a personal habits and productivity microservices platform. Designed a
 
 ## Quick Start
 
-- clone and cd into the repo
-- docker compose up --build # (planned — add docker-compose.yml)
-
-- or to build/test all services:
-- for svc in api-gateway auth-service habits-service stats-service notification-service bot-service worker-service; do
-- cd $svc && go build -v ./... && go test -v -race -cover ./... && cd ..
-- done
+clone and cd into the repo
+```
+docker compose up --build # (planned — add docker-compose.yml)
+```
+or to build/test all services:
+```
+for svc in api-gateway auth-service habits-service stats-service notification-service bot-service worker-service; do
+cd $svc && go build -v ./... && go test -v -race -cover ./... && cd ..
+done
+```
 
 *Instructions for local orchestration and API examples are coming soon.*
 
